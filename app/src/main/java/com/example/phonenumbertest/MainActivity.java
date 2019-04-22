@@ -49,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
 
                     int[] phoneNumber=new int[10];
 
+
+                    //getting position of the integers
                     int firstDigit = Integer.parseInt(Integer.toString(number).substring(0,1));
                     int secondDigit = Integer.parseInt(Integer.toString(number).substring(1,2));
                     int thirdDigit = Integer.parseInt(Integer.toString(number).substring(2,3));
@@ -62,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+                    //adding the integers into their respective positions in the array
                     phoneNumber[0]=firstDigit;
                     phoneNumber[1]=secondDigit;
                     phoneNumber[2]=thirdDigit;
@@ -74,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                     phoneNumber[8]=ninethDigit;
                     phoneNumber[9]=tenthDigit;
 
-
+                    //converting the integers into strings to be able to display them in a textview
                     String a =Integer.toString(phoneNumber[0]);
                     String b =Integer.toString(phoneNumber[1]);
                     String c =Integer.toString(phoneNumber[2]);
